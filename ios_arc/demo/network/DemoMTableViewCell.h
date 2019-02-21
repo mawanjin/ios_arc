@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoMTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *mImage;
+@property (weak, nonatomic) IBOutlet UILabel *mLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnOP;
+@property (weak, nonatomic) IBOutlet UILabel *lb_progress;
 
 @end
 

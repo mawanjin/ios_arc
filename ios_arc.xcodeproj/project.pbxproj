@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F41D5221E7201001FFFFE /* DemoDownloadListItemModel.m */; };
 		274B44AD221BF047004B9742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44AC221BF047004B9742 /* AppDelegate.m */; };
 		274B44B0221BF047004B9742 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44AF221BF047004B9742 /* ViewController.m */; };
 		274B44B3221BF047004B9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274B44B1221BF047004B9742 /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		17E32A23B9FFE58FF96B9F96 /* Pods-ios_arc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_arc.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_arc/Pods-ios_arc.release.xcconfig"; sourceTree = "<group>"; };
+		270F41D4221E7201001FFFFE /* DemoDownloadListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoDownloadListItemModel.h; sourceTree = "<group>"; };
+		270F41D5221E7201001FFFFE /* DemoDownloadListItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoDownloadListItemModel.m; sourceTree = "<group>"; };
 		274B44A8221BF047004B9742 /* ios_arc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_arc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274B44AB221BF047004B9742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		274B44AC221BF047004B9742 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270F41D3221E71D2001FFFFE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				270F41D4221E7201001FFFFE /* DemoDownloadListItemModel.h */,
+				270F41D5221E7201001FFFFE /* DemoDownloadListItemModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		274B449F221BF047004B9742 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +180,7 @@
 		27D344CE221CDFDA0035384D /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				270F41D3221E71D2001FFFFE /* model */,
 				27D344CF221CE01E0035384D /* network */,
 			);
 			path = demo;
@@ -426,6 +439,7 @@
 				274B44AD221BF047004B9742 /* AppDelegate.m in Sources */,
 				274B44BE221BF048004B9742 /* main.m in Sources */,
 				27D34521221D71000035384D /* DemoMTableViewCell.m in Sources */,
+				270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */,
 				27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */,
 				27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */,
 				274B44B6221BF047004B9742 /* ios_arc.xcdatamodeld in Sources */,
