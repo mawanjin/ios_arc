@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.1.1)
+  - PPNetworkHelper (0.8.1):
+    - AFNetworking (~> 3.2.0)
+    - YYCache (~> 1.0.4)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - PPNetworkHelper (from `https://github.com/jkpang/PPNetworkHelper.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - IQKeyboardManager
+    - YYCache
+
+EXTERNAL SOURCES:
+  PPNetworkHelper:
+    :git: https://github.com/jkpang/PPNetworkHelper.git
+
+CHECKOUT OPTIONS:
+  PPNetworkHelper:
+    :commit: 54505979e1522fed07cc0a4ecba057010b0d8c6b
+    :git: https://github.com/jkpang/PPNetworkHelper.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 6dedabbbbee299123ca3c609bcb63a6a7ab75790
+
+COCOAPODS: 1.5.3
