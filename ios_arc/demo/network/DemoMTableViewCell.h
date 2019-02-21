@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *btnOP;
 @property (weak, nonatomic) IBOutlet UILabel *lb_progress;
 
+@property(nonatomic,copy)void(^btnOpBlock)(void);
 @end
 
 NS_ASSUME_NONNULL_END

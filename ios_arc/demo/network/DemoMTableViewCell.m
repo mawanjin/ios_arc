@@ -17,8 +17,15 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
+    
 }
+
+- (IBAction)onBtnOPClicked:(id)sender {
+    if(self.btnOpBlock){
+        self.btnOpBlock();
+    }
+}
+
 
 @end

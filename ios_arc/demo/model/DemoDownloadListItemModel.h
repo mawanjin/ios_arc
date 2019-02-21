@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger,DOWNLOAD_STATUS) {
+    STATUS_NORMAL=0,
+    STATUS_STOP=1,
+    STATUS_ERROR=2,
+    STATUS_FINISH=3
+};
+
 @interface DemoDownloadListItemModel : NSObject
 
 @property(nonatomic) int32_t id;
@@ -17,7 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) NSString *icon;
 @property(nonatomic) NSString *url;
 @property(nonatomic) int32_t size;
-@property(nonatomic) int32_t status;
+@property(nonatomic) DOWNLOAD_STATUS status;
+
+//-(instancetype)init;
 
 @end
 

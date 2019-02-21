@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F41D5221E7201001FFFFE /* DemoDownloadListItemModel.m */; };
+		270F41DB221EB578001FFFFE /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F41DA221EB578001FFFFE /* DownloadManager.m */; };
 		274B44AD221BF047004B9742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44AC221BF047004B9742 /* AppDelegate.m */; };
 		274B44B0221BF047004B9742 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44AF221BF047004B9742 /* ViewController.m */; };
 		274B44B3221BF047004B9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274B44B1221BF047004B9742 /* Main.storyboard */; };
@@ -60,6 +61,8 @@
 		17E32A23B9FFE58FF96B9F96 /* Pods-ios_arc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_arc.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_arc/Pods-ios_arc.release.xcconfig"; sourceTree = "<group>"; };
 		270F41D4221E7201001FFFFE /* DemoDownloadListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoDownloadListItemModel.h; sourceTree = "<group>"; };
 		270F41D5221E7201001FFFFE /* DemoDownloadListItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoDownloadListItemModel.m; sourceTree = "<group>"; };
+		270F41D9221EB578001FFFFE /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		270F41DA221EB578001FFFFE /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		274B44A8221BF047004B9742 /* ios_arc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_arc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274B44AB221BF047004B9742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		274B44AC221BF047004B9742 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +141,23 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		270F41D7221EB540001FFFFE /* download */ = {
+			isa = PBXGroup;
+			children = (
+				270F41D8221EB559001FFFFE /* core */,
+			);
+			path = download;
+			sourceTree = "<group>";
+		};
+		270F41D8221EB559001FFFFE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				270F41D9221EB578001FFFFE /* DownloadManager.h */,
+				270F41DA221EB578001FFFFE /* DownloadManager.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
 		274B449F221BF047004B9742 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +180,7 @@
 		274B44AA221BF047004B9742 /* ios_arc */ = {
 			isa = PBXGroup;
 			children = (
+				270F41D7221EB540001FFFFE /* download */,
 				27D3451C221D60CB0035384D /* Supporting Files */,
 				27D344D9221D5EBC0035384D /* images */,
 				27D344CE221CDFDA0035384D /* demo */,
@@ -437,6 +458,7 @@
 				274B44B0221BF047004B9742 /* ViewController.m in Sources */,
 				27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */,
 				274B44AD221BF047004B9742 /* AppDelegate.m in Sources */,
+				270F41DB221EB578001FFFFE /* DownloadManager.m in Sources */,
 				274B44BE221BF048004B9742 /* main.m in Sources */,
 				27D34521221D71000035384D /* DemoMTableViewCell.m in Sources */,
 				270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */,

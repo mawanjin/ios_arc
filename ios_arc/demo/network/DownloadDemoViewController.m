@@ -8,6 +8,7 @@
 
 #import "DownloadDemoViewController.h"
 #import "DemoMTableViewCell.h"
+#import "DownloadManager.h"
 
 
 @interface DownloadDemoViewController ()
@@ -80,6 +81,26 @@
     DemoDownloadListItemModel *item = [self.listItems objectAtIndex:row];
     cell.mLabel.text = item.name;
     cell.mImage.image = [UIImage imageNamed:item.icon];
+    
+    //event
+    cell.btnOpBlock = ^{
+        
+        switch (item.status) {
+            case STATUS_NORMAL:
+                [[DownloadManager sharedManager] start:0 op_model:item :^(bool rs) {
+                    if(rs){
+                        NSLog(@"good");
+                    }else{
+                        NSLog(@"good2");
+                    }
+                }];
+                break;
+            default:
+                break;
+        }
+        
+        
+    };
     
     return cell;
 }

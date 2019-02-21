@@ -10,4 +10,11 @@
 
 @implementation DemoDownloadListItemModel
 
+-(instancetype)init{
+    if(self=[super init]){
+        _status = STATUS_NORMAL;
+    }
+    return self;
+}
+
 @end
