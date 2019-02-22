@@ -24,6 +24,7 @@ typedef NS_ENUM(NSUInteger,DOWNLOAD_STATUS) {
 @property(nonatomic) NSString *icon;
 @property(nonatomic) NSString *url;
 @property(nonatomic) int32_t size;
+@property(nonatomic) NSString *progress;
 @property(nonatomic) DOWNLOAD_STATUS status;
 
 //-(instancetype)init;

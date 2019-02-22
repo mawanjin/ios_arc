@@ -9,4 +9,6 @@ target 'ios_arc' do
   
   pod 'PPNetworkHelper',:git => 'https://github.com/jkpang/PPNetworkHelper.git'
   pod 'IQKeyboardManager'
+  pod 'TCBlobDownload'
+  pod 'QTEventBus'
 end

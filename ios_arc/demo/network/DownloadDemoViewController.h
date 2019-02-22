@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "DemoDownloadListItemModel.h"
+#import "DownloadStartEvent.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DownloadDemoViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>

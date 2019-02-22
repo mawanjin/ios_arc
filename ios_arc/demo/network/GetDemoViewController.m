@@ -29,11 +29,17 @@
     
     [PPNetworkHelper GET:url parameters:nil success:^(id responseObject) {
         NSLog(@"=============请求结果：\n%@",responseObject);
+        @try {
+            NSData * data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
+            NSString *jcString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            
+            [self->_tv_result setText:jcString];
+        } @catch (NSException *exception) {
+            
+        } @finally {
+            
+        }
         
-        NSData * data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
-        NSString *jcString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        
-        [self->_tv_result setText:jcString];
         
     } failure:^(NSError *error) {
         //请求失败

@@ -76,16 +76,18 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
+      "filename" : "dadbbfa4610d661660ce96f7a62f60c0.jpg",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
       "scale" : "2x"
     },
     {
-      "orientation" : "portrait",
-      "idiom" : "iphone",
       "extent" : "full-screen",
-      "minimum-system-version" : "7.0",
+      "idiom" : "iphone",
       "subtype" : "retina4",
+      "filename" : "fd8f146aa638c8f648bbb210e497298a.jpg",
+      "minimum-system-version" : "7.0",
+      "orientation" : "portrait",
       "scale" : "2x"
     },
     {

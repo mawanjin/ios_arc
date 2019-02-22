@@ -18,16 +18,24 @@ PODS:
   - PPNetworkHelper (0.8.1):
     - AFNetworking (~> 3.2.0)
     - YYCache (~> 1.0.4)
+  - QTEventBus (0.2.4):
+    - QTEventBus/Core (= 0.2.4)
+  - QTEventBus/Core (0.2.4)
+  - TCBlobDownload (2.1.1)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - PPNetworkHelper (from `https://github.com/jkpang/PPNetworkHelper.git`)
+  - QTEventBus
+  - TCBlobDownload
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - IQKeyboardManager
+    - QTEventBus
+    - TCBlobDownload
     - YYCache
 
 EXTERNAL SOURCES:
@@ -43,8 +51,10 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
+  QTEventBus: a71703bc36fced4efb39dac91c9aa493fcc2f6db
+  TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 6dedabbbbee299123ca3c609bcb63a6a7ab75790
+PODFILE CHECKSUM: 5f0ce04c548a772d86af4da8390ba76f3c655b99
 
 COCOAPODS: 1.5.3

@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "DemoDownloadListItemModel.h"
+#import "DOwnloadStartEvent.h"
+#import "DownloadStatus.h"
+#import "DownloadProgressEvent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(DownloadManager*)sharedManager;
 
--(void)start:(NSInteger *)op_type op_model:(DemoDownloadListItemModel *)model :(void(^)(bool rs))opResult;
+-(void)start:(int)op_type op_model:(DemoDownloadListItemModel *)model :(void(^)(bool rs))opResult;
 
 @end
 

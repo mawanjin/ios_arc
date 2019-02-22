@@ -9,7 +9,7 @@
 #import "DownloadDemoViewController.h"
 #import "DemoMTableViewCell.h"
 #import "DownloadManager.h"
-
+#import "QTEventBus.h"
 
 @interface DownloadDemoViewController ()
 
@@ -48,6 +48,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"下载哟";
+    
 //    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     NSBundle *bundle = [NSBundle mainBundle];
@@ -57,6 +58,32 @@
     //init items
     [self initListItem];
     
+    
+    [QTSub(self, DownloadStartEvent) next:^(DownloadStartEvent *event) {
+        
+        for(DemoDownloadListItemModel *i in self.listItems){
+            if(i.id == event.id){
+                i.status = event.status;
+                [self.mTableView reloadData];
+            }
+        }
+        
+    }];
+    
+    [QTSub(self, DownloadProgressEvent) next:^(DownloadProgressEvent *event) {
+        int count = 0;
+        for(DemoDownloadListItemModel *i in self.listItems){
+            if(i.id == event.id){
+                i.progress = event.progress;
+            }else
+                count++;
+        }
+        //局部刷新
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:count inSection:0];
+        
+        [self.mTableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationFade];
+//        [self.mTableView reloadData];
+    }];
     
 }
 
@@ -81,6 +108,13 @@
     DemoDownloadListItemModel *item = [self.listItems objectAtIndex:row];
     cell.mLabel.text = item.name;
     cell.mImage.image = [UIImage imageNamed:item.icon];
+    if(item.progress){
+        cell.lb_progress.text = item.progress;
+    }
+    
+    if(item.status == DOWNLOAD_STATUS_FINISH){
+        [cell.btnOP setTitle:@"已完成" forState:UIControlStateNormal];
+    }
     
     //event
     cell.btnOpBlock = ^{

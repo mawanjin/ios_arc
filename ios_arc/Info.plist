@@ -30,6 +30,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>需要打开您的相册，选取图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要打开您的相册，选取图片</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
