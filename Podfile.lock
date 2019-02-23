@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - IQKeyboardManager (6.1.1)
   - PPNetworkHelper (0.8.1):
     - AFNetworking (~> 3.2.0)
@@ -25,6 +28,7 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - FMDB
   - IQKeyboardManager
   - PPNetworkHelper (from `https://github.com/jkpang/PPNetworkHelper.git`)
   - QTEventBus
@@ -33,6 +37,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - FMDB
     - IQKeyboardManager
     - QTEventBus
     - TCBlobDownload
@@ -49,12 +54,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
   QTEventBus: a71703bc36fced4efb39dac91c9aa493fcc2f6db
   TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 5f0ce04c548a772d86af4da8390ba76f3c655b99
+PODFILE CHECKSUM: 8560f818031f74ec5dd19f8d1adf195205b518b9
 
 COCOAPODS: 1.5.3

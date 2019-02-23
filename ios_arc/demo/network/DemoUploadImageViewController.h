@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import "PPNetWorkHelper.h"
+#import "Global_Config.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DemoUploadImageViewController : ViewController
+@interface DemoUploadImageViewController : ViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property(nonatomic,strong) UIImagePickerController *imagePicker;
+@property (weak, nonatomic) IBOutlet UIImageView *MImage;
 @end
 
 NS_ASSUME_NONNULL_END

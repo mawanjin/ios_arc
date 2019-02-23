@@ -11,4 +11,5 @@ target 'ios_arc' do
   pod 'IQKeyboardManager'
   pod 'TCBlobDownload'
   pod 'QTEventBus'
+  pod 'FMDB'
 end

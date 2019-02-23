@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "DBManager.h"
 @interface AppDelegate ()
 
 @end
@@ -36,7 +37,8 @@
     
     keyboardManager.keyboardDistanceFromTextField = 10.0f; // 输入框距离键盘的距离
 
-    
+    //DB
+    [[DBManager sharedManager] createMainTable];
     return YES;
 }
 

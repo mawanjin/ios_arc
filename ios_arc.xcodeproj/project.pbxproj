@@ -14,6 +14,10 @@
 		270F41E6221FD442001FFFFE /* DownloadStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F41E5221FD442001FFFFE /* DownloadStatus.m */; };
 		270F41E9221FDC09001FFFFE /* DownloadProgressEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F41E8221FDC09001FFFFE /* DownloadProgressEvent.m */; };
 		270F41EF221FFAD4001FFFFE /* DemoUploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F41EE221FFAD4001FFFFE /* DemoUploadImageViewController.m */; };
+		274222792220FC0E0098606D /* Global_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 274222782220FC0E0098606D /* Global_Config.m */; };
+		2742227E222132BA0098606D /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742227D222132BA0098606D /* DBViewController.m */; };
+		27422281222136A30098606D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27422280222136A30098606D /* DBManager.m */; };
+		274222852221578F0098606D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274222842221578F0098606D /* TestViewController.m */; };
 		274B44AD221BF047004B9742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44AC221BF047004B9742 /* AppDelegate.m */; };
 		274B44B0221BF047004B9742 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44AF221BF047004B9742 /* ViewController.m */; };
 		274B44B3221BF047004B9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274B44B1221BF047004B9742 /* Main.storyboard */; };
@@ -78,6 +82,14 @@
 		270F41E8221FDC09001FFFFE /* DownloadProgressEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressEvent.m; sourceTree = "<group>"; };
 		270F41ED221FFAD4001FFFFE /* DemoUploadImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoUploadImageViewController.h; sourceTree = "<group>"; };
 		270F41EE221FFAD4001FFFFE /* DemoUploadImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUploadImageViewController.m; sourceTree = "<group>"; };
+		274222772220FC0E0098606D /* Global_Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Config.h; sourceTree = "<group>"; };
+		274222782220FC0E0098606D /* Global_Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Global_Config.m; sourceTree = "<group>"; };
+		2742227C222132BA0098606D /* DBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		2742227D222132BA0098606D /* DBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		2742227F222136A30098606D /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		27422280222136A30098606D /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		274222832221578F0098606D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		274222842221578F0098606D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		274B44A8221BF047004B9742 /* ios_arc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_arc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274B44AB221BF047004B9742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		274B44AC221BF047004B9742 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -195,6 +207,33 @@
 			path = qteventbus;
 			sourceTree = "<group>";
 		};
+		274222762220FBEA0098606D /* global */ = {
+			isa = PBXGroup;
+			children = (
+				274222772220FC0E0098606D /* Global_Config.h */,
+				274222782220FC0E0098606D /* Global_Config.m */,
+			);
+			path = global;
+			sourceTree = "<group>";
+		};
+		2742227B222132A80098606D /* db */ = {
+			isa = PBXGroup;
+			children = (
+				2742227C222132BA0098606D /* DBViewController.h */,
+				2742227D222132BA0098606D /* DBViewController.m */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		27422282222139640098606D /* db */ = {
+			isa = PBXGroup;
+			children = (
+				2742227F222136A30098606D /* DBManager.h */,
+				27422280222136A30098606D /* DBManager.m */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
 		274B449F221BF047004B9742 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +256,8 @@
 		274B44AA221BF047004B9742 /* ios_arc */ = {
 			isa = PBXGroup;
 			children = (
+				27422282222139640098606D /* db */,
+				274222762220FBEA0098606D /* global */,
 				270F41E0221FA713001FFFFE /* qteventbus */,
 				270F41DC221F880F001FFFFE /* utils */,
 				270F41D7221EB540001FFFFE /* download */,
@@ -240,8 +281,11 @@
 		27D344CE221CDFDA0035384D /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				2742227B222132A80098606D /* db */,
 				270F41D3221E71D2001FFFFE /* model */,
 				27D344CF221CE01E0035384D /* network */,
+				274222832221578F0098606D /* TestViewController.h */,
+				274222842221578F0098606D /* TestViewController.m */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -496,14 +540,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274222792220FC0E0098606D /* Global_Config.m in Sources */,
 				274B44B0221BF047004B9742 /* ViewController.m in Sources */,
 				27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */,
+				27422281222136A30098606D /* DBManager.m in Sources */,
 				274B44AD221BF047004B9742 /* AppDelegate.m in Sources */,
 				270F41E3221FA757001FFFFE /* DownloadStartEvent.m in Sources */,
 				270F41EF221FFAD4001FFFFE /* DemoUploadImageViewController.m in Sources */,
 				270F41DF221F882A001FFFFE /* FileUtil.m in Sources */,
 				270F41DB221EB578001FFFFE /* DownloadManager.m in Sources */,
 				270F41E6221FD442001FFFFE /* DownloadStatus.m in Sources */,
+				2742227E222132BA0098606D /* DBViewController.m in Sources */,
+				274222852221578F0098606D /* TestViewController.m in Sources */,
 				270F41E9221FDC09001FFFFE /* DownloadProgressEvent.m in Sources */,
 				274B44BE221BF048004B9742 /* main.m in Sources */,
 				27D34521221D71000035384D /* DemoMTableViewCell.m in Sources */,
