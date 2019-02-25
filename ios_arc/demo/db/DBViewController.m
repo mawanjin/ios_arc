@@ -14,16 +14,19 @@
 
 @implementation DBViewController
 
+NSMutableArray *items;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"数据库";
     self.navigationController.navigationBar.clipsToBounds = YES;
-    
-    
+    items = [[DBManager sharedManager] queryTestData];
 }
 - (IBAction)addData:(id)sender {
     [[DBManager sharedManager] insertTestData];
+    items = [[DBManager sharedManager] queryTestData];
+    [self.mTableVIew reloadData];
 }
 - (IBAction)queryData:(id)sender {
     [[DBManager sharedManager] queryTestData];
@@ -43,11 +46,17 @@
 */
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
+    return [[DBManager sharedManager] queryTestDataCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString * CellIdentifier = @"CellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    NSInteger index = [indexPath row];
+    NSString *name = [items objectAtIndex:index];
+    cell.textLabel.text = name;
     
+    return cell;
 }
 
 @end

@@ -46,10 +46,10 @@ FMDatabase *db;
     [db close];
 }
 
--(void)queryTestData{
+-(NSMutableArray*)queryTestData{
     if (![db open]) {
         NSLog(@"db open fail");
-        return;
+        return nil;
     }
     FMResultSet *result = [db executeQuery:@"select *from 'test'"];
     
@@ -61,8 +61,20 @@ FMDatabase *db;
     }
     
     [db close];
+    return attr;
 }
 
-
+-(int)queryTestDataCount{
+    if (![db open]) {
+        NSLog(@"db open fail");
+        return 0;
+    }
+    
+    int count = 0;
+    count = [db intForQuery:@"select count(*) from 'test'"];
+    
+    [db close];
+    return count;
+}
 
 @end

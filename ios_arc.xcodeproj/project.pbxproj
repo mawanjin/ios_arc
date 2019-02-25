@@ -26,6 +26,8 @@
 		274B44BB221BF048004B9742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274B44B9221BF048004B9742 /* LaunchScreen.storyboard */; };
 		274B44BE221BF048004B9742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B44BD221BF048004B9742 /* main.m */; };
 		2776ABF9221C09CD0074330A /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 2776ABF8221C09CD0074330A /* readme */; };
+		27AF44AD2223C33700FB61BA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44AC2223C33700FB61BA /* MainViewController.m */; };
+		27AF44B02223D04000FB61BA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44AF2223D04000FB61BA /* MineViewController.m */; };
 		27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D1221CE0610035384D /* GetDemoViewController.m */; };
 		27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D4221CFA3D0035384D /* PostDemoViewController.m */; };
 		27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D7221D3AAF0035384D /* DownloadDemoViewController.m */; };
@@ -102,6 +104,10 @@
 		274B44BC221BF048004B9742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		274B44BD221BF048004B9742 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2776ABF8221C09CD0074330A /* readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		27AF44AB2223C33700FB61BA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		27AF44AC2223C33700FB61BA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		27AF44AE2223D04000FB61BA /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		27AF44AF2223D04000FB61BA /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		27D344D0221CE0610035384D /* GetDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDemoViewController.h; sourceTree = "<group>"; };
 		27D344D1221CE0610035384D /* GetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDemoViewController.m; sourceTree = "<group>"; };
 		27D344D3221CFA3D0035384D /* PostDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDemoViewController.h; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 		274B44AA221BF047004B9742 /* ios_arc */ = {
 			isa = PBXGroup;
 			children = (
+				27AF44AA2223C31F00FB61BA /* controller */,
 				27422282222139640098606D /* db */,
 				274222762220FBEA0098606D /* global */,
 				270F41E0221FA713001FFFFE /* qteventbus */,
@@ -276,6 +283,17 @@
 				274B44B4221BF047004B9742 /* ios_arc.xcdatamodeld */,
 			);
 			path = ios_arc;
+			sourceTree = "<group>";
+		};
+		27AF44AA2223C31F00FB61BA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				27AF44AB2223C33700FB61BA /* MainViewController.h */,
+				27AF44AC2223C33700FB61BA /* MainViewController.m */,
+				27AF44AE2223D04000FB61BA /* MineViewController.h */,
+				27AF44AF2223D04000FB61BA /* MineViewController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		27D344CE221CDFDA0035384D /* demo */ = {
@@ -543,6 +561,7 @@
 				274222792220FC0E0098606D /* Global_Config.m in Sources */,
 				274B44B0221BF047004B9742 /* ViewController.m in Sources */,
 				27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */,
+				27AF44AD2223C33700FB61BA /* MainViewController.m in Sources */,
 				27422281222136A30098606D /* DBManager.m in Sources */,
 				274B44AD221BF047004B9742 /* AppDelegate.m in Sources */,
 				270F41E3221FA757001FFFFE /* DownloadStartEvent.m in Sources */,
@@ -554,6 +573,7 @@
 				274222852221578F0098606D /* TestViewController.m in Sources */,
 				270F41E9221FDC09001FFFFE /* DownloadProgressEvent.m in Sources */,
 				274B44BE221BF048004B9742 /* main.m in Sources */,
+				27AF44B02223D04000FB61BA /* MineViewController.m in Sources */,
 				27D34521221D71000035384D /* DemoMTableViewCell.m in Sources */,
 				270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */,
 				27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */,

@@ -20,7 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)createMainTable;
 -(void)insertTestData;
--(void)queryTestData;
+-(NSMutableArray*)queryTestData;
+-(int)queryTestDataCount;
 
 @end
 
