@@ -14,6 +14,10 @@
 
 @implementation MineViewController
 
+- ( void )viewWillAppear:( BOOL )animated{
+    self.tabBarController.tabBar.hidden =NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -21,13 +25,9 @@
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 - (IBAction)goToProfile:(id)sender {
-    
-    self.hidesBottomBarWhenPushed=YES;
     UIStoryboard *storboard = self.storyboard;
     MineProfileViewController *vc2 = [storboard instantiateViewControllerWithIdentifier:@"id_mineprofile"];
     [self.navigationController pushViewController:vc2 animated:YES];
-    
-    self.hidesBottomBarWhenPushed=NO;
 }
 
 

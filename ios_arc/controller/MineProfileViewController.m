@@ -17,13 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.tabBarController.tabBar.hidden =YES;
+    self.tabBarController.tabBar.hidden =YES;
    
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-//    self.tabBarController.tabBar.hidden =NO;
-}
+
 /*
 #pragma mark - Navigation
 
