@@ -20,6 +20,16 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
+- (IBAction)goToProfile:(id)sender {
+    
+    self.hidesBottomBarWhenPushed=YES;
+    UIStoryboard *storboard = self.storyboard;
+    MineProfileViewController *vc2 = [storboard instantiateViewControllerWithIdentifier:@"id_mineprofile"];
+    [self.navigationController pushViewController:vc2 animated:YES];
+    
+    self.hidesBottomBarWhenPushed=NO;
+}
+
 
 /*
 #pragma mark - Navigation

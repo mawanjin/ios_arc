@@ -28,6 +28,10 @@
 		2776ABF9221C09CD0074330A /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 2776ABF8221C09CD0074330A /* readme */; };
 		27AF44AD2223C33700FB61BA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44AC2223C33700FB61BA /* MainViewController.m */; };
 		27AF44B02223D04000FB61BA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44AF2223D04000FB61BA /* MineViewController.m */; };
+		27AF44B42223D90000FB61BA /* ImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44B32223D90000FB61BA /* ImageDemoViewController.m */; };
+		27AF44B72223DC0300FB61BA /* ImageListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44B62223DC0300FB61BA /* ImageListItemModel.m */; };
+		27AF44BA2223ECCF00FB61BA /* ImageListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44B92223ECCF00FB61BA /* ImageListTableViewCell.m */; };
+		27AF44BD2223FA7800FB61BA /* MineProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */; };
 		27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D1221CE0610035384D /* GetDemoViewController.m */; };
 		27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D4221CFA3D0035384D /* PostDemoViewController.m */; };
 		27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D7221D3AAF0035384D /* DownloadDemoViewController.m */; };
@@ -108,6 +112,14 @@
 		27AF44AC2223C33700FB61BA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		27AF44AE2223D04000FB61BA /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		27AF44AF2223D04000FB61BA /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		27AF44B22223D90000FB61BA /* ImageDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDemoViewController.h; sourceTree = "<group>"; };
+		27AF44B32223D90000FB61BA /* ImageDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDemoViewController.m; sourceTree = "<group>"; };
+		27AF44B52223DC0300FB61BA /* ImageListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageListItemModel.h; sourceTree = "<group>"; };
+		27AF44B62223DC0300FB61BA /* ImageListItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageListItemModel.m; sourceTree = "<group>"; };
+		27AF44B82223ECCF00FB61BA /* ImageListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageListTableViewCell.h; sourceTree = "<group>"; };
+		27AF44B92223ECCF00FB61BA /* ImageListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageListTableViewCell.m; sourceTree = "<group>"; };
+		27AF44BB2223FA7800FB61BA /* MineProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineProfileViewController.h; sourceTree = "<group>"; };
+		27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineProfileViewController.m; sourceTree = "<group>"; };
 		27D344D0221CE0610035384D /* GetDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDemoViewController.h; sourceTree = "<group>"; };
 		27D344D1221CE0610035384D /* GetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDemoViewController.m; sourceTree = "<group>"; };
 		27D344D3221CFA3D0035384D /* PostDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDemoViewController.h; sourceTree = "<group>"; };
@@ -170,6 +182,8 @@
 			children = (
 				270F41D4221E7201001FFFFE /* DemoDownloadListItemModel.h */,
 				270F41D5221E7201001FFFFE /* DemoDownloadListItemModel.m */,
+				27AF44B52223DC0300FB61BA /* ImageListItemModel.h */,
+				27AF44B62223DC0300FB61BA /* ImageListItemModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -292,13 +306,27 @@
 				27AF44AC2223C33700FB61BA /* MainViewController.m */,
 				27AF44AE2223D04000FB61BA /* MineViewController.h */,
 				27AF44AF2223D04000FB61BA /* MineViewController.m */,
+				27AF44BB2223FA7800FB61BA /* MineProfileViewController.h */,
+				27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		27AF44B12223D8E800FB61BA /* image */ = {
+			isa = PBXGroup;
+			children = (
+				27AF44B22223D90000FB61BA /* ImageDemoViewController.h */,
+				27AF44B32223D90000FB61BA /* ImageDemoViewController.m */,
+				27AF44B82223ECCF00FB61BA /* ImageListTableViewCell.h */,
+				27AF44B92223ECCF00FB61BA /* ImageListTableViewCell.m */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		27D344CE221CDFDA0035384D /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				27AF44B12223D8E800FB61BA /* image */,
 				2742227B222132A80098606D /* db */,
 				270F41D3221E71D2001FFFFE /* model */,
 				27D344CF221CE01E0035384D /* network */,
@@ -567,16 +595,20 @@
 				270F41E3221FA757001FFFFE /* DownloadStartEvent.m in Sources */,
 				270F41EF221FFAD4001FFFFE /* DemoUploadImageViewController.m in Sources */,
 				270F41DF221F882A001FFFFE /* FileUtil.m in Sources */,
+				27AF44B42223D90000FB61BA /* ImageDemoViewController.m in Sources */,
 				270F41DB221EB578001FFFFE /* DownloadManager.m in Sources */,
 				270F41E6221FD442001FFFFE /* DownloadStatus.m in Sources */,
 				2742227E222132BA0098606D /* DBViewController.m in Sources */,
 				274222852221578F0098606D /* TestViewController.m in Sources */,
 				270F41E9221FDC09001FFFFE /* DownloadProgressEvent.m in Sources */,
+				27AF44B72223DC0300FB61BA /* ImageListItemModel.m in Sources */,
 				274B44BE221BF048004B9742 /* main.m in Sources */,
 				27AF44B02223D04000FB61BA /* MineViewController.m in Sources */,
 				27D34521221D71000035384D /* DemoMTableViewCell.m in Sources */,
 				270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */,
+				27AF44BD2223FA7800FB61BA /* MineProfileViewController.m in Sources */,
 				27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */,
+				27AF44BA2223ECCF00FB61BA /* ImageListTableViewCell.m in Sources */,
 				27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */,
 				274B44B6221BF047004B9742 /* ios_arc.xcdatamodeld in Sources */,
 			);

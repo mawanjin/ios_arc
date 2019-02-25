@@ -24,6 +24,9 @@ PODS:
   - QTEventBus (0.2.4):
     - QTEventBus/Core (= 0.2.4)
   - QTEventBus/Core (0.2.4)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - TCBlobDownload (2.1.1)
   - YYCache (1.0.4)
 
@@ -32,6 +35,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - PPNetworkHelper (from `https://github.com/jkpang/PPNetworkHelper.git`)
   - QTEventBus
+  - SDWebImage (~> 4.0)
   - TCBlobDownload
 
 SPEC REPOS:
@@ -40,6 +44,7 @@ SPEC REPOS:
     - FMDB
     - IQKeyboardManager
     - QTEventBus
+    - SDWebImage
     - TCBlobDownload
     - YYCache
 
@@ -58,9 +63,10 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
   QTEventBus: a71703bc36fced4efb39dac91c9aa493fcc2f6db
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 8560f818031f74ec5dd19f8d1adf195205b518b9
+PODFILE CHECKSUM: c58496771eba67998fa3d7b0e45b3760fe46d881
 
 COCOAPODS: 1.5.3

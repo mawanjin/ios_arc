@@ -1,17 +1,16 @@
 //
-//  MineViewController.h
+//  MineProfileViewController.h
 //  ios_arc
 //
 //  Created by lala on 2019/2/25.
 //  Copyright © 2019 mawj. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "MineProfileViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MineViewController : UIViewController
+@interface MineProfileViewController : UIViewController
 
 @end
 

@@ -12,4 +12,5 @@ target 'ios_arc' do
   pod 'TCBlobDownload'
   pod 'QTEventBus'
   pod 'FMDB'
+  pod 'SDWebImage', '~> 4.0'
 end
