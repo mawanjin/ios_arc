@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import "DBManager.h"
+#import "IntroductionViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -39,6 +41,19 @@
 
     //DB
     [[DBManager sharedManager] createMainTable];
+    
+    
+    
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        IntroductionViewController *introController = [sb instantiateViewControllerWithIdentifier:@"introController"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+        NSLog(@"首次启动");
+        self.window.rootViewController = introController;
+    }
+    
+    
     return YES;
 }
 

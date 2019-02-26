@@ -33,6 +33,10 @@
 		27AF44BA2223ECCF00FB61BA /* ImageListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44B92223ECCF00FB61BA /* ImageListTableViewCell.m */; };
 		27AF44BD2223FA7800FB61BA /* MineProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */; };
 		27AF44C02224D56900FB61BA /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44BF2224D56900FB61BA /* TabBarViewController.m */; };
+		27AF44C42224DDA500FB61BA /* XibTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44C22224DDA500FB61BA /* XibTestViewController.m */; };
+		27AF44C52224DDA500FB61BA /* XibTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27AF44C32224DDA500FB61BA /* XibTestViewController.xib */; };
+		27AF44C82224E02700FB61BA /* MallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44C72224E02700FB61BA /* MallViewController.m */; };
+		27AF44CB22251ED300FB61BA /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44CA22251ED300FB61BA /* IntroductionViewController.m */; };
 		27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D1221CE0610035384D /* GetDemoViewController.m */; };
 		27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D4221CFA3D0035384D /* PostDemoViewController.m */; };
 		27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D7221D3AAF0035384D /* DownloadDemoViewController.m */; };
@@ -123,6 +127,13 @@
 		27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineProfileViewController.m; sourceTree = "<group>"; };
 		27AF44BE2224D56900FB61BA /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		27AF44BF2224D56900FB61BA /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		27AF44C12224DDA500FB61BA /* XibTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibTestViewController.h; sourceTree = "<group>"; };
+		27AF44C22224DDA500FB61BA /* XibTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTestViewController.m; sourceTree = "<group>"; };
+		27AF44C32224DDA500FB61BA /* XibTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTestViewController.xib; sourceTree = "<group>"; };
+		27AF44C62224E02700FB61BA /* MallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallViewController.h; sourceTree = "<group>"; };
+		27AF44C72224E02700FB61BA /* MallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallViewController.m; sourceTree = "<group>"; };
+		27AF44C922251ED300FB61BA /* IntroductionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		27AF44CA22251ED300FB61BA /* IntroductionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		27D344D0221CE0610035384D /* GetDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDemoViewController.h; sourceTree = "<group>"; };
 		27D344D1221CE0610035384D /* GetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDemoViewController.m; sourceTree = "<group>"; };
 		27D344D3221CFA3D0035384D /* PostDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDemoViewController.h; sourceTree = "<group>"; };
@@ -313,6 +324,13 @@
 				27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */,
 				27AF44BE2224D56900FB61BA /* TabBarViewController.h */,
 				27AF44BF2224D56900FB61BA /* TabBarViewController.m */,
+				27AF44C12224DDA500FB61BA /* XibTestViewController.h */,
+				27AF44C22224DDA500FB61BA /* XibTestViewController.m */,
+				27AF44C32224DDA500FB61BA /* XibTestViewController.xib */,
+				27AF44C62224E02700FB61BA /* MallViewController.h */,
+				27AF44C72224E02700FB61BA /* MallViewController.m */,
+				27AF44C922251ED300FB61BA /* IntroductionViewController.h */,
+				27AF44CA22251ED300FB61BA /* IntroductionViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -527,6 +545,7 @@
 				27D34585221E390B0035384D /* Slovenia.png in Resources */,
 				27D345A1221E390B0035384D /* Spain.png in Resources */,
 				274B44BB221BF048004B9742 /* LaunchScreen.storyboard in Resources */,
+				27AF44C52224DDA500FB61BA /* XibTestViewController.xib in Resources */,
 				274B44B8221BF048004B9742 /* Assets.xcassets in Resources */,
 				27D3458F221E390B0035384D /* Cameroon.png in Resources */,
 				27D34582221E390B0035384D /* Uruguay.png in Resources */,
@@ -598,6 +617,7 @@
 				27AF44AD2223C33700FB61BA /* MainViewController.m in Sources */,
 				27422281222136A30098606D /* DBManager.m in Sources */,
 				274B44AD221BF047004B9742 /* AppDelegate.m in Sources */,
+				27AF44C42224DDA500FB61BA /* XibTestViewController.m in Sources */,
 				270F41E3221FA757001FFFFE /* DownloadStartEvent.m in Sources */,
 				270F41EF221FFAD4001FFFFE /* DemoUploadImageViewController.m in Sources */,
 				270F41DF221F882A001FFFFE /* FileUtil.m in Sources */,
@@ -614,6 +634,8 @@
 				270F41D6221E7201001FFFFE /* DemoDownloadListItemModel.m in Sources */,
 				27AF44BD2223FA7800FB61BA /* MineProfileViewController.m in Sources */,
 				27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */,
+				27AF44C82224E02700FB61BA /* MallViewController.m in Sources */,
+				27AF44CB22251ED300FB61BA /* IntroductionViewController.m in Sources */,
 				27AF44BA2223ECCF00FB61BA /* ImageListTableViewCell.m in Sources */,
 				27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */,
 				274B44B6221BF047004B9742 /* ios_arc.xcdatamodeld in Sources */,
