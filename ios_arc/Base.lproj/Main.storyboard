@@ -140,15 +140,17 @@
             </objects>
             <point key="canvasLocation" x="-901.60000000000002" y="-710.19490254872574"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="WHI-Zy-Boo">
             <objects>
-                <tabBarController id="a0e-26-PhO" sceneMemberID="viewController">
+                <tabBarController id="a0e-26-PhO" customClass="TabBarViewController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t6J-9T-8ZF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="4Zt-XK-BCs" kind="relationship" relationship="viewControllers" id="hFj-s6-d68"/>

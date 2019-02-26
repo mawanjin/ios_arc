@@ -32,6 +32,7 @@
 		27AF44B72223DC0300FB61BA /* ImageListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44B62223DC0300FB61BA /* ImageListItemModel.m */; };
 		27AF44BA2223ECCF00FB61BA /* ImageListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44B92223ECCF00FB61BA /* ImageListTableViewCell.m */; };
 		27AF44BD2223FA7800FB61BA /* MineProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */; };
+		27AF44C02224D56900FB61BA /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AF44BF2224D56900FB61BA /* TabBarViewController.m */; };
 		27D344D2221CE0610035384D /* GetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D1221CE0610035384D /* GetDemoViewController.m */; };
 		27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D4221CFA3D0035384D /* PostDemoViewController.m */; };
 		27D344D8221D3AAF0035384D /* DownloadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D344D7221D3AAF0035384D /* DownloadDemoViewController.m */; };
@@ -120,6 +121,8 @@
 		27AF44B92223ECCF00FB61BA /* ImageListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageListTableViewCell.m; sourceTree = "<group>"; };
 		27AF44BB2223FA7800FB61BA /* MineProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineProfileViewController.h; sourceTree = "<group>"; };
 		27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineProfileViewController.m; sourceTree = "<group>"; };
+		27AF44BE2224D56900FB61BA /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		27AF44BF2224D56900FB61BA /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		27D344D0221CE0610035384D /* GetDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDemoViewController.h; sourceTree = "<group>"; };
 		27D344D1221CE0610035384D /* GetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDemoViewController.m; sourceTree = "<group>"; };
 		27D344D3221CFA3D0035384D /* PostDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDemoViewController.h; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 				27AF44AF2223D04000FB61BA /* MineViewController.m */,
 				27AF44BB2223FA7800FB61BA /* MineProfileViewController.h */,
 				27AF44BC2223FA7800FB61BA /* MineProfileViewController.m */,
+				27AF44BE2224D56900FB61BA /* TabBarViewController.h */,
+				27AF44BF2224D56900FB61BA /* TabBarViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 			files = (
 				274222792220FC0E0098606D /* Global_Config.m in Sources */,
 				274B44B0221BF047004B9742 /* ViewController.m in Sources */,
+				27AF44C02224D56900FB61BA /* TabBarViewController.m in Sources */,
 				27D344D5221CFA3D0035384D /* PostDemoViewController.m in Sources */,
 				27AF44AD2223C33700FB61BA /* MainViewController.m in Sources */,
 				27422281222136A30098606D /* DBManager.m in Sources */,

@@ -18,10 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor greenColor]} forState:UIControlStateNormal];
-    
-    NSDictionary *dicHome = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:NSForegroundColorAttributeName];
-    [self.mTabBarItem setTitleTextAttributes:dicHome forState:UIControlStateSelected];
+//    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor greenColor]} forState:UIControlStateNormal];
+//    
+//    NSDictionary *dicHome = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:NSForegroundColorAttributeName];
+//    [self.mTabBarItem setTitleTextAttributes:dicHome forState:UIControlStateSelected];
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
