@@ -9,5 +9,7 @@
 #import "Global_Config.h"
 
 @implementation Global_Config
-NSString *const DEFAULT_SERVER_URL = @"http://127.0.0.1:8080/upload";
+NSString *const DEFAULT_SERVER_URL = @"http://127.0.0.1:8080";
+
+int const NETWORK_ERROR_SERVER_UNKOWN = 1001;
 @end

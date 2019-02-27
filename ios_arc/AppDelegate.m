@@ -43,7 +43,6 @@
     [[DBManager sharedManager] createMainTable];
     
     
-    
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         

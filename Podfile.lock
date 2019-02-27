@@ -17,7 +17,9 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - HMAMessageViewManager (0.1.6)
   - IQKeyboardManager (6.1.1)
+  - MJExtension (3.0.15.1)
   - PPNetworkHelper (0.8.1):
     - AFNetworking (~> 3.2.0)
     - YYCache (~> 1.0.4)
@@ -32,7 +34,9 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
+  - HMAMessageViewManager
   - IQKeyboardManager
+  - MJExtension
   - PPNetworkHelper (from `https://github.com/jkpang/PPNetworkHelper.git`)
   - QTEventBus
   - SDWebImage (~> 4.0)
@@ -42,7 +46,9 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - FMDB
+    - HMAMessageViewManager
     - IQKeyboardManager
+    - MJExtension
     - QTEventBus
     - SDWebImage
     - TCBlobDownload
@@ -60,13 +66,15 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HMAMessageViewManager: 72dbcacc5a137e77178792df6fd704248bf51bf9
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
   QTEventBus: a71703bc36fced4efb39dac91c9aa493fcc2f6db
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: c58496771eba67998fa3d7b0e45b3760fe46d881
+PODFILE CHECKSUM: f889795325e01b6a963e9713da52593180d3c503
 
 COCOAPODS: 1.5.3

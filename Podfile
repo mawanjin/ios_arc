@@ -13,4 +13,6 @@ target 'ios_arc' do
   pod 'QTEventBus'
   pod 'FMDB'
   pod 'SDWebImage', '~> 4.0'
+  pod 'MJExtension'
+  pod "HMAMessageViewManager"
 end
